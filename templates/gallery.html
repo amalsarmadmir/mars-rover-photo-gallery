@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mars Rover Photo Gallery</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="header-image">
+        <h1 class="text-center">Mars Rover Photo Gallery</h1>
+    </div>
+    <br>
+    <div class="line"></div> 
+    <div class="container">
+        <div class="row">
+            {% for photo in photos %}
+            <div class="card-container">
+                <div class="card">
+                    <div class="layers">
+                        <div class="layer"></div>
+                        <div class="layer"></div>
+                        <div class="layer"></div>
+                        <div class="layer"></div>
+                        <div class="layer"></div>
+                        <div class="layer"></div>
+                        <div class="layer"></div>
+                        <div class="layer"></div>
+                        <div class="layer"></div>
+                        <div class="layer"></div>
+                    </div>
+                    <img src="{{ photo['image_url'] }}" class="rover-image" alt="Mars Rover Image">
+                    <h2>{{ photo['rover'] }}</h2>
+                    <p>Camera: {{ photo['camera'] }}</p>
+                    <p>Date: {{ photo['earth_date'] }}</p>
+                </div>
+            </div>    
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>

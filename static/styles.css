@@ -1,0 +1,132 @@
+.header-image {
+    position: relative;
+    height: 400px; 
+    width: 1300px;
+    background-image: url('https://w0.peakpx.com/wallpaper/392/1001/HD-wallpaper-stars-black-sky-black-aesthetic.jpg');
+    margin-bottom: 100px;
+}
+
+.header-image h1 {
+    font-family: 'Courier New', monospace;
+    position: absolute;
+    top: 50%;   
+    left: 50%; 
+    transform: translate(-50%, -50%);  
+    color: white;  
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+body {
+    background: linear-gradient(to bottom, #000000, #434343);
+}
+
+
+.rover-image {
+    width: 100%; 
+    height: 200px; 
+    border-radius: 0.5em; 
+    margin-bottom: 1em; 
+}
+
+.card-container {
+    perspective: 50em;
+    margin: 20px;
+}
+
+.card {
+    position: relative;
+    width: 320px; 
+    padding: 1em;
+    color: #fff;
+    transform: rotateY(0deg) rotateX(0deg); 
+    transform-style: preserve-3d;
+    transition: transform 1s ease;
+    box-sizing: border-box; 
+}
+.card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    gap: 20px; 
+}
+
+.card h2{
+    color:#000;
+    font-family: 'Courier New', monospace;
+    cursor: pointer;
+}
+
+.card h2 {
+    --s: 0.1em;   /* the thickness of the line */
+    --c: #FFDB00; /* the color */
+    
+    color: #0000;
+    padding-bottom: var(--s);
+    background: 
+      linear-gradient(90deg,var(--c) 50%,#000 0) calc(100% - var(--_p,0%))/200% 100%,
+      linear-gradient(var(--c) 0 0) 0% 100%/var(--_p,0%) var(--s) no-repeat;
+    -webkit-background-clip: text,padding-box;
+            background-clip: text,padding-box;
+    transition: 0.5s;
+  }
+  .card h2:hover {--_p: 100%}
+
+
+
+.card p{
+    color:#434343;
+    font-family: 'Courier New', monospace;
+}
+.card:hover {
+    transform: rotateY(30deg) rotateX(15deg);
+}
+
+.layers {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+
+.layer {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 1em;
+    background-image: var(--bi);
+    transform: translateZ(var(--tz));
+    box-shadow: 0 0 0.5em #000d inset;
+}
+
+.layer:nth-child(1) { --tz: 0px; }
+.layer:nth-child(2) { --tz: -4px; }
+.layer:nth-child(3) { --tz: -8px; }
+.layer:nth-child(4) { --tz: -12px; }
+.layer:nth-child(5) { --tz: -16px; }
+.layer:nth-child(6) { --tz: -20px; }
+.layer:nth-child(7) { --tz: -24px; }
+.layer:nth-child(8) { --tz: -28px; }
+.layer:nth-child(9) { --tz: -32px; }
+.layer:nth-child(10) { --tz: -36px; }
+
+.layer:last-child {
+    box-shadow: 0 0 0.5em #000d inset, 0 0 5px #000;
+}
+
+.line { 
+    margin-top:135px;
+    width: 1300px; 
+    height: 2px; 
+    background: #fff; 
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+} 
