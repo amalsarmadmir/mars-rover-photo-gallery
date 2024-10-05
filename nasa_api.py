@@ -1,6 +1,6 @@
 import requests
 import json
-api_key="471phCd01alJRSjRfdt1mxYxQBXv3HUrM0Arwgf0"
+api_key="your_api_key"
 api_url="https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos"
 
 def get_photos(sol,camera):
