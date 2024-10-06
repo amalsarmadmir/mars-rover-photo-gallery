@@ -6,7 +6,7 @@ Welcome to the **Mars Rover Photo Gallery**! This web application allows users t
 
 - Browse a gallery of Mars rover photos.
 - Responsive design with a modern UI.
-
+- Search Functionality on the basis of type of rover(Curiosity, Opportunity, Spirit), camera (FHAZ, RHAZ ,NAVCAM etc.) and sol(day)
 ## Technologies Used
 
 - **Python** - Backend programming language.
